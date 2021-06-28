@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--transparent-white);
+  color: var(--very-light-gray);
+  font-family: "lexend deca", sans-serif;
+}
+
+section {
+  padding: 2em;
+  display: flex;
+  /*flex-direction: stretch;*/
+  /*justify-content: space-between;*/
+  min-height: 400px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: auto;
+}
+
+.card-1 {
+  background-color: var(--bright-orange);
+  min-width: 200px;
+  max-width: 305px;
+  min-height: 270px;
+  padding: 25px 20px 25px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-1 button {
+  height: 28px;
+  width: 100px;
+  border-radius: 14px;
+  color: var(--bright-orange);
+  letter-spacing: 0.1rem;
+  position: relative;
+  border: none;
+  margin-top: 40px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  align-items: center;
+}
+
+button {
+  font-family: "lexend deca";
+}
+
+.card-2 {
+  background-color: var(--dark-cyan);
+  min-width: 200px;
+  max-width: 305px;
+  min-height: 270px;
+  padding: 25px 20px 25px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-2 button {
+  height: 28px;
+  width: 100px;
+  border-radius: 14px;
+  color: var(--dark-cyan);
+  letter-spacing: 0.1rem;
+  position: relative;
+  border: none;
+  margin-top: 40px;
+}
+
+.card-3 {
+  background-color: var(--very-dark-cyan);
+  min-width: 200px;
+  max-width: 305px;
+  min-height: 270px;
+  padding: 25px 20px 25px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-3 button {
+  height: 28px;
+  width: 100px;
+  border-radius: 14px;
+  color: var(--very-dark-cyan);
+  letter-spacing: 0.1rem;
+  position: relative;
+  border: none;
+  margin-top: 40px;
+}
+
+.attribution {
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
